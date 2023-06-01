@@ -1,13 +1,60 @@
 * {
+    font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
+}
+
+html, 
+body {
+    height: 100%;
 
 }
 
 .conteiner {
+    margin: 0 auto;
+    height: 100%;
+    width: 100%;
     text-align: center;
+    background-image: url("img/bg.jpg");
+    background-size: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100px;
+    background-color: azure;
+}
+
+.content {
+    box-sizing: border-box;
+    min-height: 100%;
+    max-height: max-content;
+}
+
+.section_content {
+    padding-top: 20px;
+    display: grid;
+    gap: 10px;
 }
 
 .result {
     font-size: 20px;
 }
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+	margin-top: -50px;
+    background-color:black;
+}
+
+.footer_text {
+    color: azure;
+}
+
