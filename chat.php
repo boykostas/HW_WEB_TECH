@@ -1,3 +1,7 @@
+<?php 
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -20,8 +24,12 @@
                 <nav>
                     <a href="index.html">Главная</a>
                     <a href="name.html">Приветствие</a>
-                    <a href="chat.html">Чат</a>
+                    <a href="chat.php">Чат</a>
                 </nav>
+            
+
+
+
 
             </section>
         </main>
