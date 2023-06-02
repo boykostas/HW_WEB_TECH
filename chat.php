@@ -1,5 +1,7 @@
 <?php 
 
+
+echo file_get_contents('chat.txt');
 ?>
 
 <!DOCTYPE html>

@@ -1,12 +1,21 @@
 function send() {
-    let massage = document.getElementById("text").value;
+    let message = document.getElementById("text").value;
     document.getElementById("text").value = "";
-    console.log(massage);
+    (async () => {
+        let response = await fetch('chat.php?message=' + message);
+        let answer = await response.text();
+        document.getElementById('messages').innerText = answer;
+    }
+    )();
 }
 
 function get() {
-    let answer = "Hello";
-    document.getElementById("messages").innerText = answer;
+    (async () => {
+        let response = await fetch('chat.php');
+        let answer = await response.text();
+        document.getElementById('messages').innerText = answer;
+    }
+    )();
 }
 
 get();
