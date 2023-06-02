@@ -1,4 +1,5 @@
-<?php 
+<?php
+
 $file = fopen('chat.txt', 'a+');
 
 if (isset($_GET['message'])) {
@@ -8,15 +9,16 @@ if (isset($_GET['message'])) {
     die();
 }
 
-$message = [];
+
+$messages = [];
 
 while (!feof($file)) {
-    $message[] = fgets($file);
+    $messages[] = fgets($file);
 }
 
 $messages = array_reverse($messages);
 
-foreach ($message as $key => $str) {
+foreach ($messages as $key => $str) {
     echo $str;
     if ($key >= 10) break;
 }
