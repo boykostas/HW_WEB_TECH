@@ -52,6 +52,8 @@ $job = [
         <p>
             <?php echo $job['job_desc'][2]; ?>
         </p><br>
+        <br><br>
+        <a href="SQL.txt">Задание №2. SQL-запросы.</a>
     </div>
 </div>
 </body>
